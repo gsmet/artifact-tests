@@ -14,7 +14,7 @@ jobs:
         with:
           name: artifacts-v3
           path: README.md
-      - name: Upload artifacts v3
+      - name: Upload artifacts v4
         uses: actions/upload-artifact@v4
         with:
           name: artifacts-v4
