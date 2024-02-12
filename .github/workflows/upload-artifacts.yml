@@ -1,0 +1,19 @@
+name: Upload artifacts
+
+on:
+  workflow_dispatch:
+
+jobs:
+  upload-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upload artifacts v3
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifacts-v3
+          path: README.md
+      - name: Upload artifacts v3
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifacts-v4
+          path: README.md
